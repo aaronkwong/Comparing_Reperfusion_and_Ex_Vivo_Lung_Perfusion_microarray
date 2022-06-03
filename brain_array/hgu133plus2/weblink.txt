@@ -1,0 +1,2 @@
+"http://mbni.org/customcdf/22.0.0/entrezg.download/pd.hgu133plus2.hs.entrezg_22.0.0.tar.gz"
+"http://mbni.org/customcdf/22.0.0/entrezg.download/hgu133plus2hsentrezg.db_22.0.0.tar.gz"

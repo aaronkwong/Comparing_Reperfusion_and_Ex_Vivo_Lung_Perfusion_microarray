@@ -1,0 +1,2 @@
+"http://mbni.org/customcdf/22.0.0/entrezg.download/clariomdhumanhsentrezg.db_22.0.0.tar.gz"
+"http://mbni.org/customcdf/22.0.0/entrezg.download/pd.clariomdhuman.hs.entrezg_22.0.0.tar.gz"

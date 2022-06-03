@@ -1,11 +1,12 @@
 #!/bin/bash 
 
-script_dir="/mnt/c/Users/Aaron Wong/OneDrive - UHN/Masters/Project #3/github/published_code"
-root_directory="/mnt/c/Users/Aaron Wong/Desktop/New folder/"
-sample_info_transplant_path="/mnt/c/Users/Aaron Wong/Desktop/New folder/data/transplant_sample.info.tab"
-sample_info_evlp_path="/mnt/c/Users/Aaron Wong/Desktop/New folder/data/evlp_sample.info.tab"
-transplant_cel_directory="/mnt/c/Users/Aaron Wong/Desktop/New folder/GSE127003_RAW/"
-evlp_cel_directory="/mnt/c/Users/Aaron Wong/Desktop/New folder/GSE127055_RAW/"
+# analysis is meant to be run in the unzipped repository
+root_directory="."
+script_dir="./scripts"
+sample_info_transplant_path="./sample_info/transplant_sample.info.tab"
+sample_info_evlp_path="./sample_info/evlp_sample.info.tab"
+transplant_cel_directory="./GSE127003_RAW"
+evlp_cel_directory="./GSE127055_RAW"
 
 # setup R virtual enviornmment for reproducibility
 Rscript "${script_dir}/setup_renv.R"
@@ -37,5 +38,5 @@ Rscript "${script_dir}/make_common_ranks.R" \
 --root_directory="$root_directory"
 
 # run gene set enrichment analysis on each dataset
-Rscript "${script_dir}/GSEA.R" \
+Rscript "${script_dir}/run_GSEA.R" \
 --root_directory="$root_directory"
