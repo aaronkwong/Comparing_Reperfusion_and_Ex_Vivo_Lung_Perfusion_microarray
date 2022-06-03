@@ -21,6 +21,8 @@ Results: 22 pathways were enriched predominantly in transplantation, including u
 
 Conclusion: EVLP and transplantation share common molecular features of injury including innate inflammation and cell death. Blocking these pathways during EVLP may allow for lung repair prior to transplantation.
 
+![](img/comparing_transplant_and_EVLP.png)
+
 ## To Replicate Analysis
 
 Download and unzip GEO datasets into unzipped repository 
