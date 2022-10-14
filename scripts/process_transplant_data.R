@@ -64,3 +64,4 @@ batch0_eset<-rma.expr[rownames(rma.expr) %in% rownames(annotations),]
 dir.create("results")
 #save results
 saveRDS(batch0_eset, file =paste0(root_directory,"/results/batch0_eset.rds"))
+saveRDS(annotations, file =paste0(root_directory,"/results/batch0_annotations.rds"))

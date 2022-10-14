@@ -66,6 +66,12 @@ rownames(batch0_summ)<-gsub("_at","",rownames(batch0_summ))
 # make summary results
 write.table(batch0_summ, file =paste0(root_directory,"/results/batch_0_improved_summ.tab"),row.names=TRUE,sep="\t",col.names=NA)
 
+# make summary results with annotations
+annotations<-readRDS(file=paste0(root_directory,"/results/batch0_annotations.rds"))
+batch0_summ_with_annotations<-cbind(batch0_summ,annotations[match(rownames(batch0_summ),annotations$ENTREZID),])
+write.table(batch0_summ_with_annotations, file =paste0(root_directory,"/results/batch_0_improved_summ_with_anno.tab"),row.names=TRUE,sep="\t",col.names=NA)
+
+
 # make rnk file
 make_rnk(x=batch0_summ,output_path=paste0(root_directory,"/results/batch0.rnk"),clean=T)
 
